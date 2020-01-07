@@ -3,72 +3,6 @@ body {
     text-align: center;
   }
   
-
-
-  #slideshow {
-    overflow: hidden;
-    height: 510px;
-    width: 728px;
-    margin: 0 auto;
-    margin-bottom:15px;
-  }
-  
-  .slide-wrapper {
-    width: 2912px;
-    -webkit-animation: slide 18s ease infinite;
-  }
-  
-  .slide {
-    float: left;
-    height: 510px;
-    width: 728px;
-  }
-  
-  .slide:nth-child(1) {
-    background-image:url(../images/Herr/Herr_kavaj.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-  
-  .slide:nth-child(2) {
-    background:url(../images/Barn/Barn_jeansjacka.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-  
-  .slide:nth-child(3) {
-    background-image: url(../images/Dam/Dam_skjorta.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-  
-  .slide:nth-child(4) {
-    background-image: url(../images/Dam/Dam_blus.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-  
-  .slide-number {
-    color: #000;
-    text-align: center;
-    font-size: 10em;
-  }
-  
-  @-webkit-keyframes slide {
-    20% {margin-left: 0px;}
-    30% {margin-left: -728px;}
-    50% {margin-left: -728px;}
-    60% {margin-left: -1456px;}
-    70% {margin-left: -1456px;}
-    80% {margin-left: -2184px;}
-    90% {margin-left: -2184px;}
-  }
-
-  
   
 
 section.card-box {
@@ -172,6 +106,33 @@ li a.webbshop {
     width: 40%;
     text-align: center;
 }
+
+
+/* ---------------- jax  --------------------------------------*/
+
+.SlideShow{
+    display:flex;
+    justify-content: center;
+}
+
+.SlideShow img{
+    /*To change the size of the slider, change these values*/
+    width: 35vw;
+    height: 35vw;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-bottom:10%;
+}
+
+.buttons button{
+    padding:25px;
+}
+
+/*-------------------------------------------------------------*/
 
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
