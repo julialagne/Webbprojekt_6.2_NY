@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;    
+    padding: 0;
+    margin: 0;
+    }
+section.container {
+    width: 90%;
+    margin: 100px auto 25px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.container h2 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 10px 5px grey;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.container > .asi {
+    width: 45%;
+    min-width: 200px;
+    padding: 30px;
+    flex-flow: row wrap;
+}
+
+.container img {
+    display: block;
+    max-width: 100%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.button{ 
+    background-color: #2c6fa8;
+    margin-left: 30px;
+    padding: 15px 10px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+}
+    
+    .footer {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:#2c6fa8;
+        bottom: 0;
+        width: 100%;
+        /* position: fixed; - Om den är fixerad ser det ej bra ut i SmallDevice*/
+    }
+    
+    .footer a {
+       color:black;
+       text-decoration: none;
+      }
+      
+  
+    .validera {
+         display: flex;
+         flex-direction: column;   
+        }
+    
+    .validera, li {
+    list-style: none;
+    padding: 2px;
+    }
+    
+    .externa ul{
+        display: flex;
+        padding-top: 20px; 
+      }
+
+  
+    .externa,li {
+    list-style-type: none;
+    display: flex;
+    }
+    .hoger {
+        padding-top: 20px; 
+        margin-right: 20px;
+    }
+
+
+    @media (max-width: 768px){
+   .container h2 {
+       font-size: 15px;
+       text-align: center;
+   }
+   .asi p {
+       font-size: 12px;
+   }
+        
+.button {
+    padding: 10px 10px;
+   }
+
+    }
+    
+    @media (max-width: 576px)  
+    {
+        .asi p {
+            font-size: 10px;
+        }
+        
+        section.container h2 {
+            font-size: 12px;
+            text-align: start;
+        }
+        
+   .button {
+   padding: 5px 5px;
+   border-radius: 20%;
+  
+  }
+  a {
+      font-size: 12px;
+  }
+  
+    }
