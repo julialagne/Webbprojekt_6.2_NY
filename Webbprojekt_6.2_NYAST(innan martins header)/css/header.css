@@ -18,7 +18,7 @@ ul {
 
 li a.fas{
     float: left;
-    color: #194681;
+    color: #000;
     margin-right: 100px;
     text-decoration: none;
     margin-left: 90px;
@@ -36,7 +36,7 @@ li a.fa{
 li a.webbshop {
     margin: auto;
     display: block;
-    color: #1b0e58;
+    color: #000;
     text-decoration: none;
     border: double #000;
     margin-top: 30px;
@@ -79,7 +79,7 @@ width: 5%;
 }
 
 
-.topnav a.active {
+.topnav a:active {
 background-color: #4CAF50;
 color: #000;
   box-sizing: border-box;    
@@ -116,8 +116,8 @@ color: #000;
       
   
 .footer {
-      font-size: 12px;
       display: flex;
+      font-size: 12px;
       justify-content: space-between;
       font-family: Arial, Helvetica, sans-serif;
       background-color: #64a3d7;
