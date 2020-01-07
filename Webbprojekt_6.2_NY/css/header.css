@@ -18,7 +18,7 @@ ul {
 
 li a.fas{
     float: left;
-    color: rgb(25, 70, 129);
+    color: #194681;
     margin-right: 100px;
     text-decoration: none;
     margin-left: 90px;
@@ -27,7 +27,7 @@ li a.fas{
 
 li a.fa{
     float: right;
-    color: black;
+    color: #000;
     text-decoration: none;
     margin-right: 90px;
     margin-top: 10px;
@@ -36,9 +36,9 @@ li a.fa{
 li a.webbshop {
     margin: auto;
     display: block;
-    color: rgb(27, 14, 88);
+    color: #1b0e58;
     text-decoration: none;
-    border: double rgb(0, 0, 0);
+    border: double #000;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 40%;
@@ -65,7 +65,7 @@ li a.webbshop {
 
 .topnav a {
 float: left;
-color: #f2f2f2;
+color: #000;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
@@ -74,14 +74,14 @@ font-size: 17px;
 
 
 .topnav a:hover {
-background-color: #2c6fa8;
+background-color: #64a3d7;
 width: 5%;
 }
 
 
 .topnav a.active {
 background-color: #4CAF50;
-color: white;
+color: #000;
   box-sizing: border-box;    
   padding: 0;
   margin: 0;
@@ -111,7 +111,7 @@ color: white;
   nav.desktop_menu li a {
   text-decoration: none;
   display: block; 
-  color: rgb(0, 0, 0);
+  color: #000;
   padding: 10px;
   }
       
@@ -121,14 +121,14 @@ color: white;
       display: flex;
       justify-content: space-between;
       font-family: Arial, Helvetica, sans-serif;
-      background-color:#2c6fa8;
+      background-color: #87959a;
       bottom: 0;
       width: 100%;
       position: fixed;
 }
   
 .footer a {
-     color:black;
+     color: #000;
      text-decoration: none;
 }
     
