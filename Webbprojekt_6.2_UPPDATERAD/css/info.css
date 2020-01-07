@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;    
+    padding: 0;
+    margin: 0;
+    }
+    
+section.container {
+    width: 90%;
+    margin: 100px auto 25px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.container h2 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 5px 10px 5px grey;/*# ändra färg?*/
+    padding: 10px 0;
+    width: 100%;
+}
+
+.container > .asi {
+    width: 45%;
+    min-width: 200px;
+    padding: 30px;
+    flex-flow: row wrap;
+}
+
+.container img {
+    display: block;
+    max-width: 100%;
+    box-shadow: 10px 10px 5px grey; /*# ändra färg?*/
+}
+
+.button{ 
+    background-color: #00f;
+    margin-left: 30px;
+    padding: 15px 10px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color:  #fff;
+}
+
+    @media (max-width: 768px){
+   .container h2 {
+       font-size: 15px;
+       text-align: center;
+   }
+   .asi p {
+       font-size: 12px;
+   }
+        
+.button {
+    padding: 10px 10px;
+   }
+
+    }
+    
+    @media (max-width: 576px)  
+    {
+        .asi p {
+            font-size: 10px;
+        }
+        
+        section.container h2 {
+            font-size: 12px;
+            text-align: start;
+        }
+        
+   .button {
+   padding: 5px 5px;
+   border-radius: 20%;
+  
+  }
+  a {
+      font-size: 12px;
+  }
+  
+    }
