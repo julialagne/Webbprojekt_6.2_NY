@@ -82,8 +82,8 @@ section.card-box {
 
 
     
-/* }
-.card-box h1 { Finns ingen H1 så vi kan ta bort denna?
+}
+/* .card-box h1 { Finns ingen H1 så vi kan ta bort denna?
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
@@ -91,7 +91,9 @@ section.card-box {
     padding: 20px 0;
     justify-content: center;
     width: 100%;
-} */
+}  */
+
+
 .card-box h2 {
     font-size: 1rem;
     margin: 0.5rem 0;
