@@ -1,26 +1,25 @@
 section.card-box {
     width: 80%; 
     margin: 50px auto;
-    background: rgba(206, 202, 202, 0.6);
+    background: #cecaca;
     overflow: hidden;
     flex-flow: row wrap;
     display: flex; 
-}
+}   
         
-        
-.card-box h1 {
+/* .card-box h1 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     color:black;
     padding: 20px 0;
     width: 100%;
-}
+} */
         
 .card-box h2 {
     font-size: 1.4rem;
     margin: 0.5rem 0;
-    color:black;
+      color: #000;
 }
             
 p.info {
@@ -46,7 +45,7 @@ p{
 
 .card-box a {
     text-decoration: none;
-    color: #333;
+     color: #fff;
 }
         
 .card-box img {
