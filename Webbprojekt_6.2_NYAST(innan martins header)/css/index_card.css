@@ -1,0 +1,209 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  
+
+section.card-box {
+    width: 40%;
+    margin: 2px auto 0;
+    background: rgba(206, 202, 202, 0.6);
+   /* border: 1px solid  rgba(206, 202, 202, 0.6);  tas bort ?*/
+    overflow: hidden;
+    display: flex; 
+    flex-flow: row wrap;
+
+
+    
+}
+.card-box h1 { /*saknas rubrik...*/
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color:black;
+    padding: 20px 0;
+    justify-content: center;
+    width: 100%;
+}
+.card-box h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color:black;
+}
+
+
+
+.card-box > .card1 {
+    width: 33.333%;
+    min-width: 120px;
+    margin-bottom: 50px;  
+    padding: 10px; 
+    order: 2;
+    padding-bottom: 2px;
+    flex-flow: row wrap;
+}
+.card-box a {
+    text-decoration: none;
+    color: #333;
+
+}
+.card-box img {
+    display: block;
+    max-width: 100%;
+}
+
+a{
+ font-size: 1rem;   
+}
+
+.button{
+    background-color: rgb(213, 226, 241);
+    border-radius: 50px;
+    height: 30px;
+    width: 40px;
+    padding:3px;
+}
+
+
+ nav {
+    background-image: linear-gradient(to right, #87959a, #2c6fa8);
+    font-size: 2.5rem;
+    position: sticky;
+    top: 0;
+
+
+}
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+li a.fas{
+    float: left;
+    color: rgb(25, 70, 129);
+    margin-right: 100px;
+    text-decoration: none;
+    margin-left: 90px;
+    margin-top: 12px;
+}
+li a.fa{
+    float: right;
+    color: black;
+    text-decoration: none;
+    margin-right: 90px;
+    margin-top: 10px;
+
+
+}
+li a.webbshop {
+    margin: auto;
+    display: block;
+    color: rgb(27, 14, 88);
+    text-decoration: none;
+    border: double rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    text-align: center;
+}
+
+
+/* ---------------- jax  --------------------------------------*/
+
+.SlideShow{
+    display:flex;
+    justify-content: center;
+}
+
+.SlideShow img{
+    /*To change the size of the slider, change these values*/
+    width: 35vw;
+    height: 35vw;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-bottom:10%;
+}
+
+.buttons button{
+    padding:25px;
+}
+
+/*-------------------------------------------------------------*/
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .card-box h1 {
+    font-size: 1.5rem;
+}
+    
+    .card-box h2{
+    font-size: 1rem;
+    
+    }
+    p.info {
+    font-size: 0.8rem;
+    }
+    .card1 p{
+    font-size: 0.8rem;
+}
+a{
+    font-size: 0.8rem;   
+   }
+}
+        
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .card-box h1 {
+    font-size: 1.3rem;
+}
+    
+    .card-box h2{
+    font-size: 0.9rem;
+}
+    p.info {
+    font-size: 0.7rem;
+}
+    .card1 p{
+    font-size: 0.7rem;
+}
+
+a{
+    font-size: 0.7rem;   
+   }
+    
+    .card-box > .card1 {
+    width: 50%;
+    margin-bottom: 10px; 
+}
+}
+        
+    
+@media (max-width: 575.98px) {
+    .card-box h1 {
+    font-size: 1.3rem;
+}
+    
+    .card-box h2{
+    font-size: 0.9rem;
+    margin: 0.7rem 0;
+}
+    
+    p.info {
+    font-size: 0.7rem;
+}
+    .card1 p{
+    font-size: 0.7rem;
+}
+
+a{
+    font-size: 0.7rem;   
+   }
+    
+    .card-box > .card1 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+}
