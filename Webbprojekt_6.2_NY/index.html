@@ -38,15 +38,36 @@
         </div>    
     </header>
 
-    <div id="slideshow">
-        <div class="slide-wrapper">
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
+    <!--     SlideShow   -->
+
+    <div class="SlideShow">
+        <div class="Slide">
+            <img src="images/Herr/Herr_kavaj.jpg">
+            <div class="buttons">
+                <button onclick="updateImage(-1)" > < </button>
+                <p>Men</p>
+                <button onclick="updateImage(+1)"> > </button>
+            </div>
+        </div>
+        <div class="Slide">
+            <img src="images/Dam/Dam_skjorta.jpg">
+            <div class="buttons">
+                <button onclick="updateImage(-1)" > < </button>
+                <p>Women</p>
+                <button onclick="updateImage(+1)"> > </button>
+            </div>
+        </div>
+        <div class="Slide">
+            <img src="images/Barn/Barn_skjorta.jpg">
+            <div class="buttons">
+                <button onclick="updateImage(-1)" > < </button>
+                <p>Children</p>
+                <button onclick="updateImage(+1)"> > </button>
+            </div>
         </div>
     </div>
+
+    <!--                        -->
 
     <section class="card-box">
         <aside class="card1">
@@ -185,5 +206,36 @@
     </section> 
 </div> 
 
+<!-- Detta ska vara längst bak i dokumentet!  -->
+<script>
+    var index = 0;
+    updateImage(0);
+
+    function updateImage(value){
+        //Gets all the elements in the html with the class name "Slide"
+        var slides = document.getElementsByClassName("Slide");
+
+        //Takes the value to either increment or decrement with
+        index += value;
+
+        //if the index gets below zero, it will get the last image of the slide
+        if(index < 0){
+            index = slides.length-1;
+        }
+
+        //if the index gets higher then the last image, index sets it self to zero
+        if(index > slides.length-1){
+            index = 0;
+        }
+
+        //Sets all slides to display:none;
+        for(i= 0; i < slides.length; i++){
+            slides[i].style.display ="none";
+        }
+
+        //After the loop is done, set the current index to display:inline;
+        slides[index].style.display = "inline-block";
+    }
+</script>
 </body>
 </html>
