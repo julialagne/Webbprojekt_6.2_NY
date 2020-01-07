@@ -36,7 +36,7 @@ section.container {
 }
 
 .button{ 
-    background-color: #2c6fa8;
+    background-color: #00f;;
     margin-left: 30px;
     padding: 15px 10px;
     border-radius: 50%;
@@ -44,13 +44,13 @@ section.container {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
 a:hover {
-    color: rgb(255, 255, 255);
+    color: #80ff80;
 }
-    
-    .footer {
+     
+/* .footer {
         font-size: 12px;
         display: flex;
         justify-content: space-between;
@@ -58,7 +58,7 @@ a:hover {
         background-color:#2c6fa8;
         bottom: 0;
         width: 100%;
-        /* position: fixed; - Om den är fixerad ser det ej bra ut i SmallDevice*/
+        position: fixed; - Om den är fixerad ser det ej bra ut i SmallDevice
     }
     
     .footer a {
@@ -90,8 +90,7 @@ a:hover {
     .hoger {
         padding-top: 20px; 
         margin-right: 20px;
-    }
-
+    } */
 
     @media (max-width: 768px){
    .container h2 {
