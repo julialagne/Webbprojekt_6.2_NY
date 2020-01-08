@@ -36,27 +36,34 @@
             <a href="kategori_herr.html">Herr</a>
         </div> 
     </header>   
+    <div id="hideable" class="confirmation">
+        <h2>Produkten lades i varukorgen</h2>
+        <button onclick="HideBox()" class="button">OK</button>
+    </div>
 
-           <section class="card-box">
+    <div class="card-container">
+        <div class="card">
             <h1>Barn - Sneakers</h1>
-
-            <aside class="card1">
-                <a href="produkt_barn_skor.html">
-                    <img src="images/Produkter/Barn/Barn_skor.jpg" alt="Barn sko" />
-                </a>
-                    <h2>Sneakers </h2>
-                        <p class="info">Pris: 199kr
-                      </p>
-                        <p> Ett par härliga vita sneakers med snörning i 100% bomull med sula av syntet. <br>
-                            Passformen är normal och finns i storlek 28-35.
-                    </p>
-                 <aside class="button">
-                    <a href="index.html">Tillbaka</a></aside>      
-                     <aside class="button">
-                        <a href="barn_skor.html">Köp</a></aside>      
-                            
-                         </aside>
-            </section>
+            
+            <br>
+            <a href="produkt_barn_skor.html">
+                <img src="images/Produkter/Barn/Barn_skor.jpg" alt="Barn sko" />
+            </a>
+            <br>
+            
+            <h2>Sneakers </h2>
+            <p class="info">Pris: 199kr
+            </p>
+            <p> Ett par härliga vita sneakers med snörning i 100% bomull med sula av syntet. <br>
+                Passformen är normal och finns i storlek 28-35.
+            </p>
+            <aside class="button">
+                <a href="index.html">Tillbaka</a>
+            </aside>
+            
+            <button onclick="ShowBox()" class="button">Köp</button>
+        </div>
+    </div>
     <div class="footer">
         <ul class="validera">
             <li> <a href="https://validator.w3.org/" class="fa fa-html5" aria-hidden="true"></a></li>
@@ -77,5 +84,15 @@
             <a href="infosida.html" class="fa fa-user-circle" aria-hidden="true"> Om oss</a> 
         </section> 
     </div> 
+    <script>
+        var box = document.getElementById("hideable");
+        function HideBox(){
+            box.style.display ="none";
+        }
+
+        function ShowBox(){
+            box.style.display="inline-block";
+        }
+    </script>
 </body>
 </html>
