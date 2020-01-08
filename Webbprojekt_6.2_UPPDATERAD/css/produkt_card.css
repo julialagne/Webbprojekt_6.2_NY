@@ -41,6 +41,7 @@ height: 30px;
 width: 100px;
 padding:4px;
 margin: 10px;
+background-color:white;
 transition: background-color 0.2s ease-out;
 }
 
@@ -52,6 +53,7 @@ transition: background-color 0.2s ease-out;
 
 
 .confirmation{
+    display:none;
     float:right;
     position: fixed;
     right:1vw;
@@ -59,5 +61,6 @@ transition: background-color 0.2s ease-out;
     border-radius: 5px;
     border:2px solid black;
     color:black;
+    background-color:white;
 
 }
