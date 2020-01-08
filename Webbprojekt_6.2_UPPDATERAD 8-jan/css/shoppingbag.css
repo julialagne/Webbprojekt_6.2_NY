@@ -1,9 +1,4 @@
 
-:root {
-    --main-bg-color: black;
-    --main-text-color: white;   
-  }
-
 .gallery-container{
     display:flex;
     flex-direction: column;
