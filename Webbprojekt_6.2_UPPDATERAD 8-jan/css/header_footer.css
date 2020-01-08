@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;   
+}
+
+body {
+  background-size: cover;
+  text-align: center;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+  font-size: 2.5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: var(--main-text-color);
+}
+
+.logo img {
+  float: left;
+  color: var(--main-bg-color);
+  margin-right: 100px;
+  text-decoration: none;
+  margin-left: 90px;
+}
+
+.header a.fa {
+  float: right;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  margin-right: 90px;
+  margin-top: 10px;
+}
+
+li a.webbshop {
+  margin: auto;
+  display: block;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  border: double var(--main-bg-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 40%;
+  text-align: center;
+}
+
+.topnav {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  overflow: hidden;
+  margin: 0.7%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98.5%;
+  border-radius: 25px;
+}
+
+.topnav a {
+  float: left;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+nav.desktop_menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  overflow: hidden;
+}
+
+nav.desktop_menu li a {
+  text-decoration: none;
+  display: block;
+  color: var(--main-text-color);
+  padding: 10px;
+}
+
+nav.desktop_menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  overflow: hidden;
+}
+
+.topnav-centered a {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.hoger {
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+/* .logo img {
+  width: 13%;
+  float: left;
+  margin-left: 6%;
+} */
+
+.validera {
+  display: flex;
+  flex-direction: column;
+}
+
+.validera, li {
+  list-style: none;
+  padding: 2px;
+}
+
+.externa ul {
+  display: flex;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  li a.webbshop {
+    margin-left: 17%;
+    font-size: 2.2rem;
+  }
+  .logo img {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  li a.fa {
+    font-size: 100%;
+    list-style: none;
+    padding-top: 25px;
+  }
+  .validera {
+    flex-direction: row;
+    margin: 0;
+    width: 10%;
+  }
+  .externa {
+    text-align: center;
+  }
+}

@@ -1,0 +1,80 @@
+:root {
+    --main-bg-color: black;
+    --main-text-color: white;   
+  }
+
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    flex-flow:wrap column;
+    align-items: center;
+    
+}
+.card{
+    width:50vw;
+    border-radius: 5px;
+
+}
+
+.card img{
+    width:100%;
+}
+
+
+
+
+.button{
+    border:solid 2px black;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    padding:4px;
+    margin: 10px;
+    background-color:white;
+    transition: background-color 0.2s ease-out;
+    }
+    
+    .button:hover{
+        background-color: black;
+        color:white;  
+    }
+
+
+
+     
+
+
+.confirmation{
+    display:none;
+    float:right;
+    position: fixed;
+    right:1vw;
+    padding:10px;
+    border-radius: 5px;
+    border:2px solid black;
+    color:black;
+    background-color:white;
+
+}
+
+
+
+@media (max-width: 767.98px) {
+    .card{
+        width:100%;
+    }
+    .card h1 {
+    font-size: 1.3rem;
+    }
+    
+    .card h2{
+    font-size: 1rem;
+    }
+    .card p {
+    font-size: 0.8rem;
+    }
+  
+
+}
+
