@@ -45,8 +45,10 @@
 
 br{margin:5px}
 
-      
-      
+p.info{      
+font-size: 1.2rem;      
+}
+
 @media (max-width: 600px) { 
     .card-container{
         display:flex;
