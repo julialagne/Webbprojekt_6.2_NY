@@ -24,11 +24,6 @@ body {
 
 br{margin:5px}
 
-
-.footer a{
- font-size: 1rem;   
-}
-
 .button{
     border:solid 1px var(--main-bg-color);
     background-color: var(--main-text-color);
