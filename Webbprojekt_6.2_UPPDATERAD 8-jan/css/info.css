@@ -17,8 +17,8 @@ section.container {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #000;
-    text-shadow: 5px 10px 5px grey;/*# ändra färg?*/
+    color: var(--main-bg-color);
+    text-shadow: 5px 10px 5px var(--main-bg-color);
     padding: 10px 0;
     width: 100%;
 }
@@ -33,19 +33,26 @@ section.container {
 .container img {
     display: block;
     max-width: 100%;
-    box-shadow: 10px 10px 5px grey; /*# ändra färg?*/
+    box-shadow: 10px 10px 10px var(--main-bg-color);
 }
 
-.button{ 
-    background-color: #00f;
-    margin-left: 30px;
-    padding: 15px 10px;
-    border-radius: 50%;
-}
 
-a {
+.button{
+    border:solid 1px var(--main-bg-color);
+    background-color: var(--main-text-color);
+    border-radius: 30px;
     text-decoration: none;
-    color:  #fff;
+    height: 50px;
+    width: 120px;
+    padding:4px 20px 4px 20px;
+    margin: 10px;
+    transition: background-color 0.2s ease-out;
+    cursor:pointer;
+}
+
+.button:hover{ 
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color); 
 }
 
     @media (max-width: 768px){
