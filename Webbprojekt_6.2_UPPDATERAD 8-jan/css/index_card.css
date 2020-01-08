@@ -3,11 +3,6 @@ body {
     text-align: center;
     font-size: 16px;
   }
-:root {
-  --main-bg-color: black;
-  --main-text-color: white;   
-}
-  
 
 .gallery-container{
     display:flex;
