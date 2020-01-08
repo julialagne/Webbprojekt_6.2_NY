@@ -32,9 +32,8 @@ nav ul {
 .logo img {
   float: left;
   color: var(--main-bg-color);
-  margin-right: 100px;
-  text-decoration: none;
-  margin-left: 90px;
+  width: 13%;
+  margin-left: 6%
 }
 
 .header a.fa {
@@ -127,12 +126,6 @@ nav.desktop_menu ul {
   color: var(--main-text-color);
   text-decoration: none;
 }
-
-/* .logo img {
-  width: 13%;
-  float: left;
-  margin-left: 6%;
-} */
 
 .validera {
   display: flex;
