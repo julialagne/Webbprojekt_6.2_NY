@@ -4,80 +4,60 @@ body {
     font-size: 16px;
   }
   
-  
-section.card-box {
-    width: 40%;
-    margin: 2px auto 0;
-    background: #cecaca;
-    overflow: hidden;
-    display: flex; 
-    flex-flow: row wrap;
 
-
-}
-.card-box h1 { /*saknas rubrik...*/
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.6rem;
-    color: #000;
-    padding: 20px 0;
+.gallery-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 100%;
 }
-.card-box h2 {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    color: #000;
-}
-
-
-.card-box > .card1 {
-    width: 33.333%;
-    min-width: 120px;
-    margin-bottom: 50px;  
-    padding: 10px; 
-    order: 2;
-    padding-bottom: 2px;
-    flex-flow: row wrap;
-}
-.card-box a {
-    text-decoration: none;
-    color: #fff;
+.card-container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
 
 }
-.card-box img {
-    display: block;
-    max-width: 100%;
+
+.card img{
+    width:20vw;
+    margin:5px;
 }
+
+br{margin:5px}
+
 
 .footer a{
  font-size: 1rem;   
 }
 
 .button{
-    background-color:  #00f;
-    border-radius: 50px;
-    height: 28px;
-    width: 35px;
-    padding:2px;
+    border:solid 1px black;
+    border-radius: 30px;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    padding:4px 20px 4px 20px;
+    margin: 10px;
+    transition: background-color 0.2s ease-out;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: black;
+    color:white;
 }
 
 /* ---------------- Martin  --------------------------------------*/
-
-
-
 nav {
     background-image: linear-gradient(to right, #87959a, #2c6fa8);
     font-size: 2.5rem;
     position: sticky;
     top: 0;
 }
-
 ul {
     list-style: none;
     overflow: hidden;
 }
-
 li a.fa {
     float: right;
     color: #000;
@@ -85,62 +65,52 @@ li a.fa {
     margin-right: 90px;
     margin-top: 10px;
 }
-/* ---------------- Martin  --------------------------------------*/
-
-
+/* ------------------------------------------------------*/
 /* ---------------- jax  --------------------------------------*/
-
 .SlideShow{
     display:flex;
     justify-content: center;
 }
-
 .SlideShow img{
     /*To change the size of the slider, change these values*/
     width: 35vw;
     height: 35vw;
 }
-
 .buttons{
     display:flex;
     justify-content: space-between;
     align-items: center;    
     margin-bottom:3%;   /*minska dem från 10% till 3% annars täcker footern min text*/
 }
-
 .buttons button{
     padding:10px;  /*minska dem från 25px till 10px */
 }
-
 /*-------------------------------------------------------------*/
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .card-box h1 {
-    font-size: 1.5rem;
-}
-    
-    .card-box h2{
-    font-size: 1rem;
-    
-    }
-    p.info {
-    font-size: 0.8rem;
-    }
-    .card1 p{
-    font-size: 0.8rem;
-}
-a{
-    font-size: 0.8rem;   
-   }
-}
+
         
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .card-box h1 {
+@media (max-width: 600px) { 
+    .card-container{
+        display:flex;
+        flex-flow:column wrap;
+        justify-content: center;
+    
+    }
+
+    .card{
+        margin-bottom:10px;
+    }
+
+    .card img{
+        width:100vw;
+    }
+
+    .card h1 {
     font-size: 1.3rem;
 }
     
-    .card-box h2{
+    .card h2{
     font-size: 0.9rem;
 }
     p.info {
@@ -150,40 +120,10 @@ a{
     font-size: 0.7rem;
 }
 
-a{
+  a{
     font-size: 0.7rem;   
    }
-    
-    .card-box > .card1 {
-    width: 50%;
-    margin-bottom: 10px; 
-}
-}
-        
-    
-@media (max-width: 575.98px) {
-    .card-box h1 {
-    font-size: 1.3rem;
-}
-    
-    .card-box h2{
-    font-size: 0.9rem;
-    margin: 0.7rem 0;
-}
-    
-    p.info {
-    font-size: 0.7rem;
-}
-    .card1 p{
-    font-size: 0.7rem;
+
 }
 
-a{
-    font-size: 0.7rem;   
-   }
-    
-    .card-box > .card1 {
-    width: 100%;
-    margin-bottom: 10px;
-}
-}
+      
