@@ -35,7 +35,8 @@ br{margin:5px}
 }
 
 .button{
-    border:solid 1px black;
+    border:solid 1px var(--main-bg-color);
+    background-color: var(--main-text-color);
     border-radius: 30px;
     text-decoration: none;
     height: 30px;
@@ -52,7 +53,7 @@ br{margin:5px}
 
 /* ---------------- Martin  --------------------------------------*/
 nav {
-    background-color: background-color: var(--main-bg-color);
+   background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-size: 2.5rem;
     position: sticky;
