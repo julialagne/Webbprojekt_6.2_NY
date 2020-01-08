@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;   
+}
+
 body {
   background-size: cover;
   text-align: center;
@@ -12,7 +17,6 @@ body {
 }
 
 nav {
-  background-image: linear-gradient(to right, #87959a, #2c6fa8);
   font-size: 2.5rem;
   position: sticky;
   top: 0;
@@ -26,15 +30,15 @@ ul {
 
 .logo img {
   float: left;
-  color: #000;
+  color: var(--main-bg-color);
   margin-right: 100px;
   text-decoration: none;
   margin-left: 90px;
 }
 
-li a.fa {
+.header li a.fa {
   float: right;
-  color: #000;
+  color: var(--main-bg-color);
   text-decoration: none;
   margin-right: 90px;
   margin-top: 10px;
@@ -43,9 +47,9 @@ li a.fa {
 li a.webbshop {
   margin: auto;
   display: block;
-  color: #000;
+  color: var(--main-bg-color);
   text-decoration: none;
-  border: double #000;
+  border: double var(--main-bg-color);
   margin-top: 30px;
   margin-bottom: 30px;
   width: 40%;
@@ -53,7 +57,8 @@ li a.webbshop {
 }
 
 .topnav {
-  background-color: #64a3d7;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   overflow: hidden;
   margin: 0.7%;
   display: flex;
@@ -65,16 +70,13 @@ li a.webbshop {
 
 .topnav a {
   float: left;
-  color: #000;
+  color: var(--main-text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #87959a;
-}
 
 nav.desktop_menu ul {
   display: flex;
@@ -86,7 +88,7 @@ nav.desktop_menu ul {
 nav.desktop_menu li a {
   text-decoration: none;
   display: block;
-  color: #000;
+  color: var(--main-text-color);
   padding: 10px;
 }
 
@@ -114,13 +116,14 @@ nav.desktop_menu ul {
   display: flex;
   justify-content: space-between;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #2c6fa8;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   bottom: 0;
   width: 100%;
 }
 
 .footer a {
-  color: #000;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
