@@ -69,9 +69,10 @@ font-size: 1.2rem;
     font-size: 1.3rem;
 }
     
-    p.info {
-    font-size: 0.7rem;
+    .card h2 {
+    font-size: 1rem;
 }
+    
     .card1 p{
     font-size: 0.7rem;
 }
@@ -80,4 +81,6 @@ font-size: 1.2rem;
     font-size: 0.7rem;   
    }
 
+    
+    
 }
