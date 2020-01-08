@@ -3,6 +3,10 @@ body {
     text-align: center;
     font-size: 16px;
   }
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;   
+}
   
 
 .gallery-container{
@@ -42,14 +46,14 @@ br{margin:5px}
     cursor:pointer;
 }
 
-.button:hover{
-    background-color: black;
-    color:white;
-}
+.button:hover{ 
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color); }
 
 /* ---------------- Martin  --------------------------------------*/
 nav {
-    background-image: linear-gradient(to right, #87959a, #2c6fa8);
+    background-color: background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     font-size: 2.5rem;
     position: sticky;
     top: 0;
@@ -58,9 +62,9 @@ ul {
     list-style: none;
     overflow: hidden;
 }
-li a.fa {
+.header li a.fa {
     float: right;
-    color: #000;
+    color: var(--main-bg-color);
     text-decoration: none;
     margin-right: 90px;
     margin-top: 10px;
