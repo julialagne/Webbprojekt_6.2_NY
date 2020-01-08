@@ -23,9 +23,10 @@ nav {
   width: 100%;
 }
 
-ul {
+nav ul {
   list-style: none;
   overflow: hidden;
+  background-color: var(--main-text-color);
 }
 
 .logo img {
@@ -36,7 +37,7 @@ ul {
   margin-left: 90px;
 }
 
-.header li a.fa {
+.header a.fa {
   float: right;
   color: var(--main-bg-color);
   text-decoration: none;
@@ -127,11 +128,11 @@ nav.desktop_menu ul {
   text-decoration: none;
 }
 
-.logo img {
+/* .logo img {
   width: 13%;
   float: left;
   margin-left: 6%;
-}
+} */
 
 .validera {
   display: flex;
